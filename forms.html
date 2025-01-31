@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUpForms</title>
+    <link rel="stylesheet" href="first.css">
 </head>
 <body>
     <header>
-        <nav class="formnav">
+        <nav class="bionav">
           <ul>
-            <li><a href="index.html">HomePage</a></li>
+            <li><a href="/FirstAssignment/">HomePage</a></li>
             <!--<li><a href="forms.html">SignUp</a></li>-->
-            <li><button class="MyBtn">View Records</button></li>
+            <li><button popovertarget="mydiv" class="MyBtn">Click ME</button></li>
           </ul>
         </nav>
       </header>
 
       <main>
+        <h1 class="tomorrow-bold">Signup</h1>
+           <h3 class="signf">Take the next steps to apply at AltSchool Africa</h3>
         <form action="">
             <Fieldset>
                 <legend> Personal Details </legend>
@@ -86,8 +89,23 @@
                 </table>
                     </fieldset>
         </form>
-
+        <section>
+            <div popover id="mydiv">
+              <h2>Appreciation</h2>
+              <hr>
+              <p>Much appreciation for visiting my Page</p>
+              <p>My Admission Number: ALT/SOE/024/5228</p>
+              <button popovertarget="mydiv" popovertargetaction="hide">Close</button>
+            </div>
+          </section>
 
       </main>
 </body>
+<footer>
+    <a href="#top">Back to top</a>
+      <p class="myaddress">
+        &copy; 2025 Enyo Filling Station.<br>
+        Alagbole-Akute road, Akute, Ifo, Ogun State<br>
+      </p>
+  </footer>
 </html>

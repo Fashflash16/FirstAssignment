@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SolutionOne</title>
+    <link rel="stylesheet" href="first.css">
   </head>
   <body id="top">
-    <style>
+    <!-- <style>
       body {
         background-color: lightblue;
         h1 {
@@ -53,13 +54,13 @@
           text-decoration: none;
           color: #333;
         }*/
-    </style>
+    </style> -->
     <header>
       <nav class="bionav">
         <ul>
-          <li><a href="index.html">HomePage</a></li>
+          <li><a href="/FirstAssignment/">HomePage</a></li>
           <li><a href="forms.html">SignUp</a></li>
-          <li><button class="MyBtn">View Records</button></li>
+          <li><button popovertarget="mydiv" class="MyBtn">Click ME</button></li>
         </ul>
       </nav>
     </header>
@@ -69,27 +70,25 @@
           <h1>Basic Information</h1>
         </header>
         <p>
-          <b><label for="MyName">Name:</label></b> Fasetire Gbolahan
+          <label for="MyName">Name</label><b>:Fasetire Gbolahan</b> 
         </p>
         <p>
-          <b><label for="Gender">Gender:</label></b> Male
+        <label for="Gender">Gender</label><b>:Male</b>
         </p>
         <p>
-          <b><label for="AltSchoolId">ALT SCHOOL ID:</label></b>
-          ALT/SOE/024/5228
+          <label for="AltSchoolId">ALT SCHOOL ID</label><b>:ALT/SOE/024/5228</b>
         </p>
       </section>
       <article>
-          <h1>Gbolahan's biograpghy</h1>
-        <p  style="text-align: justify;">
+          <h1 >Gbolahan's biograpghy</h1>
+          <p class="tomorrow-regular">
           My name is <em>Fasetire Gbolahan</em>, I was born in Lagos On the
           <strong>15th of February</strong>, I attended Rose International
           School for my primary education,<br />
           and also proceeded with my Junior school education at Isolog College
           Alagbole. After this, I moved to the Northern part of Nigeria to
           continue my studies at Saldefi International School Katsina.
-        </p>
-        <p>
+        
           I proceeded to the State University to study Computer Science, I
           graduated with a BSc in Computer Science, and I served under the
           mandatory National Youth Service Corps for a year in Bauchi state.<br />
@@ -100,7 +99,7 @@
       </article>
       <section>
         <h1>Why i joined the program</h1>
-        <ol>
+        <ol class="tomorrow-regular">
           <li>To have more industry insights about cloud engineering</li>
           <li>To add more qualifications</li>
           <li>To be more valuable with skills learned</li>
@@ -108,17 +107,27 @@
       </section>
       <section>
         <h1>Goals for the School of Engineering</h1>
-        <ul>
+        <ol class="tomorrow-regular">
           <li>Real world problem solver</li>
           <li>Network with others</li>
           <li>Very proficient with cloud related projects</li>
-        </ul>
+        </ol>
+      </section>
+      <section>
+        <div popover id="mydiv">
+          <h2>Appreciation</h2>
+          <hr>
+          <p>Much appreciation for visiting my Page</p>
+          <p>My Admission Number: ALT/SOE/024/5228</p>
+          <button popovertarget="mydiv" popovertargetaction="hide">Close</button>
+        </div>
+
       </section>
     </main>
   </body>
   <footer>
     <a href="#top">Back to top</a>
-      <p>
+      <p class="myaddress">
         &copy; 2025 Enyo Filling Station.<br>
         Alagbole-Akute road, Akute, Ifo, Ogun State<br>
       </p>
